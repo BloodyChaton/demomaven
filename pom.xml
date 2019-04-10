@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>demomaven</artifactId>
+	<artifactId>demo</artifactId>
 	<version>1.0</version>
 	<name>demomaven</name>
 	<description>Demo project for Spring Boot</description>
@@ -32,7 +32,7 @@
 		</dependency>
 	</dependencies>
         <modules>
-            <module>enfant</module>
+            <module>enfant/pom.xml</module>
         </modules>
 	<build>
 		<plugins>
