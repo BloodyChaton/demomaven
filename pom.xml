@@ -32,7 +32,7 @@
 		</dependency>
 	</dependencies>
         <modules>
-            <module>enfant/pom.xml</module>
+            <module>enfant</module>
         </modules>
 	<build>
 		<plugins>
