@@ -13,7 +13,7 @@
 	<version>1.0</version>
 	<name>demomaven</name>
 	<description>Demo project for Spring Boot</description>
-        <packaging>pom</packaging>
+        <packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -31,9 +31,9 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-        <modules>
+       <!--<modules>
             <module>enfant/pom.xml</module>
-        </modules>
+        </modules>-->
 	<build>
 		<plugins>
 			<plugin>
