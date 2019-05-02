@@ -7,12 +7,10 @@ pipeline{
        password(name:'PASSWORD', defaultValue: 'luc', description: 'Enter a password')
    }
    stages {
-        stage ('Stage1') {
-        environment { CD="ceci est une variable spécifique au stage 1"}
-        steps {
-            echo "$CC"
-            echo "$CD"
-              }
+        stage ('checkout') {
+          steps {
+             git {credentialsId: '9cbaca88-64ed-4179-b704-ccf7e98d87e1', url: 'https://github.com/BloodyChaton/tpjenkins.git'}
+                }
         }
         stage ('Stage2') {
             environment { CE="variable stage 2"}
