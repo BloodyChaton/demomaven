@@ -2,6 +2,7 @@
 node() {
   // Étape 1
   stage('etapes-1') {
+  failFast ture
     parallel(
       'etape-1.1': {
         echo "Job 1 de l'étape 1"
