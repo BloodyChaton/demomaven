@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    stages {
+        stage('Example') {
+          stages{
+            stage('stageEnfant1'){
+              steps{
+              echo "test sequelciel1"
+              }
+            }
+            stage('stageEnfant2'){
+              steps{
+              echo "test sequelciel1"
+              }
+            }
+          }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+
+node() {
+  // Étape 1
+  stage('etapes-1') {
+    parallel(
+      'etape-1.1': {
+        echo "Job 1 de l'étape 1"
+      },
+      'etape-1.2': {
+        echo "Job 2 de l'étape 1"
+      },
+    )
+  }
+  
+}
