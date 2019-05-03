@@ -1,0 +1,29 @@
+pipeline{
+   agent any
+   stages {
+        stage ('echo') {
+        steps {echo "Hello 1st non sequentialstage"}
+                       }
+
+        stage ('Maven') {
+          tools{ maven 'Maven' }
+          stages {
+             stage ('checkout') {
+               steps {
+               echo "Step 0"
+                }
+                                }
+              stage ('maven') {
+               steps {
+               echo "Step 1"
+                     }
+              }
+              stage ('mavendepl') {
+               steps {
+               echo "Step 2"
+              }         
+                                  }
+                 }
+       }
+  }
+}
