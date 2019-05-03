@@ -12,7 +12,7 @@ pipeline{
             sh 'mvn clean install'
             }
         }
-        stage ('maven') {
+        stage ('mavendepl') {
             steps {
             sh 'mvn deploy'
             }         
