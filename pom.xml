@@ -54,11 +54,11 @@
             <id>snapshots</id>
             <name>snapshots</name>
             <url>http://localhost:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
+        </snapshotRepository>
         <repository>
-        <id>releases</id>
-        <name>releases</name>
-        <url>http://localhost:8081/repository/maven-releases/</url>
-    </repository>
+            <id>releases</id>
+            <name>releases</name>
+            <url>http://localhost:8081/repository/maven-releases/</url>
+        </repository>
 </distributionManagement>
 </project>
