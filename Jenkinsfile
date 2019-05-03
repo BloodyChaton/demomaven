@@ -14,7 +14,7 @@ pipeline{
         }
         stage ('mavendepl') {
             steps {
-            sh 'mvn deploy -s settings.xml'
+            sh 'mvn deploy -s /opt/maven/conf/settings.xml'
             }         
         }
    }
