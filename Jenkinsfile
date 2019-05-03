@@ -4,7 +4,7 @@ pipeline{
    stages {
         stage ('checkout') {
           steps {
-             git credentialsId: '9cbaca88-64ed-4179-b704-ccf7e98d87e1', url: 'https://github.com/BloodyChaton/demomaven.git'
+             git credentialsId: '9cbaca88-64ed-4179-b704-ccf7e98d87e1', url: 'https://github.com/BloodyChaton/demomaven.git', branch: 'features/Jenkinsfile'
                 }
         }
         stage ('maven') {
