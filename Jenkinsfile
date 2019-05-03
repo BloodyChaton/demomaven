@@ -14,7 +14,7 @@ pipeline{
         }
         stage ('mavendepl') {
             steps {
-            sh 'mvn deploy'
+            sh 'mvn deploy -s /home/user01/tp-jenkins/settings.xml'
             }         
         }
    }
