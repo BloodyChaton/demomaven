@@ -1,7 +1,6 @@
 pipeline{
    agent any
-   tools{ maven 'Maven'}
-
+   tools{ maven 'Maven' }
    stages {
         stage ('checkout') {
           steps {
@@ -12,13 +11,11 @@ pipeline{
             steps {
             sh 'mvn clean install'
             }
-
         }
         stage ('maven') {
             steps {
             sh 'mvn deploy'
-            }
-         
+            }         
         }
-    }
+   }
 }
