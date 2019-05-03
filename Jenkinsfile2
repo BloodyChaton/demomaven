@@ -1,4 +1,3 @@
-
 node() {
   // Étape 1
   stage('etapes-1') {
