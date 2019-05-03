@@ -1,0 +1,21 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+<servers>
+   <server>
+     <id>maven-snapshot</id>
+	   <username>mvn-user</username>
+     <password>maven</password>
+    </server>
+</servers>
+
+  <mirrors>
+    <mirror>
+      <!--This sends everything else to /public -->
+      <id>maven-repo</id>
+      <mirrorOf>*</mirrorOf>
+      <url>http://localhost:8081/repository/maven-central/</url>
+    </mirror>
+  </mirrors>
+
+</settings>

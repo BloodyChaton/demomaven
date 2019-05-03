@@ -48,4 +48,16 @@
                          </plugin>
                   </plugins>
         </reporting>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>snapshots</name>
+            <url>http://localhost:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+        <repository>
+        <id>releases</id>
+        <name>releases</name>
+        <url>http://localhost:8081/repository/maven-releases/</url>
+    </repository>
+</distributionManagement>
 </project>
